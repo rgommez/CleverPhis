@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+  db:
+    image: postgres:14
+    container_name: cleverphis_db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: cleverphis
+    volumes:
+      - db_data:/var/lib/postgresql/data
+volumes:
+  db_data:
+
