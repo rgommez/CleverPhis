@@ -8,7 +8,8 @@ La idea de este proyecto es crear una herramienta antiphishing que con el uso de
 
 
 
- cleverphis/
+```plaintext
+# cleverphis/
 │
 ├── docker-compose.yml
 ├── Dockerfile
@@ -45,3 +46,4 @@ La idea de este proyecto es crear una herramienta antiphishing que con el uso de
     ├── test_app.py           # Tests para la aplicación
     ├── test_nlp.py           # Tests para procesamiento de lenguaje natural
     └── test_model.py         # Tests para el modelo
+```
