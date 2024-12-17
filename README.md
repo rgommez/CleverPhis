@@ -125,7 +125,7 @@ Ollama nos permite ejecutar modelos de lenguaje a gran escala de manera local.
 Esta aplicación nos facilita la generación de contenido y el análisis avanzado de datos, utilizando redes neuronales profundas para comprender y producir lenguaje natural.
 
 
-### Uso de Ollama
+## Uso de Ollama
 Hemos elegido el modelo Codellama con el que trabajaremos en adelante.
 
 Podemos iniciarlo e interactuar con este desde la terminal.
@@ -136,7 +136,7 @@ Podemos iniciarlo e interactuar con este desde la terminal.
 ![](https://i.postimg.cc/kGBJ0kvq/terminal.png)
 
 
-### Open WeubUI
+## Open WeubUI
 Tenemos la posibilidad de configurar una interfaz web para trabajar con nuestro modelo.
 Para ello vamos a ejecutar un contenedor Docker con la imagen `ghcr.io/open-webui/open-webui:main` y lo configuramos de la siguiente manera:
 
