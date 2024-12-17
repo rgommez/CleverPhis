@@ -47,3 +47,40 @@ La idea de este proyecto es crear una herramienta antiphishing que con el uso de
     ├── test_nlp.py           # Tests para procesamiento de lenguaje natural
     └── test_model.py         # Tests para el modelo
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker-compose.yml
+
+Versión de docker compose 3.8.
+Servicios:
+    App aplicación principal.
+    Imagen utilizada del mismo directorio.
+    Mapea el puerto 5000:500.
+    Carga variables de entorno ".env".
+    Especifica el servicio de BD.
+
+BD:
+    Utiliza Postgres:14.
+    Nombre personalizado al contenedor de BD "cleverphis_bd".
+    Configura variables de entorno.
+    Cinfigura la contraseña.
+    Carga un volumen persistente.
+    
+    
