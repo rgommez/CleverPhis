@@ -115,3 +115,45 @@ El modelo de clasificación de phishing se entrena usando un conjunto de datos d
 En resumen, la aplicación toma correos electrónicos, los procesa para detectar phishing utilizando un modelo de machine learning, guarda los resultados en una base de datos y expone una API para interactuar con estos servicios. La estructura está diseñada para ser escalable y segura, con pruebas automáticas que garantizan el correcto funcionamiento de la API.
     
     
+
+
+## Uso de IA
+
+![](https://i.postimg.cc/QdrDmBwX/ollama.png)
+Ollama nos permite ejecutar modelos de lenguaje a gran escala de manera local.
+Esta aplicación nos facilita la generación de contenido y el análisis avanzado de datos, utilizando redes neuronales profundas para comprender y producir lenguaje natural.
+
+
+### Uso de Ollama
+Hemos elegido el modelo Codellama con el que trabajaremos en adelante.
+
+Podemos iniciarlo e interactuar con este desde la terminal.
+
+
+> `# ollama run codellama:latest` 
+![](https://i.postimg.cc/kGBJ0kvq/terminal.png)
+
+
+### Open WeubUI
+Tenemos la posibilidad de configurar una interfaz web para trabajar con nuestro modelo.
+Para ello vamos a ejecutar un contenedor Docker con la imagen `ghcr.io/open-webui/open-webui:main` y lo configuramos de la siguiente manera:
+
+[========]
+
+> `# docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main`
+
+[========]
+
+
+Una vez hecho esto, desde el navegador accedemos a `http://localhost:3000` y accedemos a la interfaz web donde acedemos con nuestras credenciales para poder operar con el modelo de IA que estamos trabajando.
+
+
+[========]
+
+![](https://i.postimg.cc/brWyp3mb/web1.png)
+
+[========]
+
+![](https://i.postimg.cc/CMQLGxw1/web2.png)
+
+[========]
